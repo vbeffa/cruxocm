@@ -37,7 +37,9 @@ function pipes() {
         paths.push([pipe]);
     }
     build_paths(s1, paths);
-    console.log('paths: ', paths);
+    console.log('all paths:');
+    console.log(paths);
+    console.log('paths with flowing pipes:');
     console.log(paths.filter(path => path.filter(pipe => !pipe.open).length === 0));
 }
 
